@@ -1,0 +1,1480 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<!-- TV SIZES CONTAINER STARTS  -->
+
+<div class="image-viewer-wrapper">
+  <div class="close-image-viewer-btn">x</div>
+  <img src="" id="lg-img" alt="" />
+</div>
+
+<div class="contact-form-wrapper">
+  <form class="contact-form d-flex flex-column">
+    <div class="close-contact-form-btn">x</div>
+    <div class="contact-heading text-center">Get a quote</div>
+    <div class="input mb-3 d-flex flex-column gap-2">
+      <div class="label">Name</div>
+      <input type="text" name="name" class="form-control" />
+    </div>
+    <div class="input mb-4 d-flex flex-column gap-2">
+      <div class="label">Phone *</div>
+      <input type="text" name="phone_number" class="form-control" />
+    </div>
+    <button class="btn btn-dark">Send</button>
+  </form>
+</div>
+
+<div class="get-quote-form-wrapper">
+  <div class="close-get-quote-form-btn">x</div>
+
+  <form action="" class="get-quote-form">
+    <div class="form-part d-flex flex-column">
+      <div class="form-part-heading">What size is the TV?</div>
+      <div class="options d-flex flex-column gap-3">
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="tv_size"
+            value="31'' or smaller"
+            id="31'' or smaller $69"
+          />
+          <label for="31'' or smaller $69">31'' or smaller</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            value="32''-59''"
+            name="tv_size"
+            id="32''-59'' $129 (popular)"
+          />
+          <label for="32''-59'' $129 (popular)">32''-59''</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="tv_size"
+            value="60'' or larger (2 techs)"
+            id="60'' or larger $189 (2 techs)"
+          />
+          <label for="60'' or larger $189 (2 techs)"
+            >60'' or larger (2 techs)</label
+          >
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            value="60'' or larger (1 tech with your help)"
+            name="tv_size"
+            id="60'' or larger $149 (1 tech with your help)"
+          />
+          <label for="60'' or larger $149 (1 tech with your help)"
+            >60'' or larger (1 tech with your help)</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="form-part">
+      <div class="form-part-heading">Select mount type</div>
+      <div class="options d-flex flex-column gap-3">
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="mount_type"
+            value="Already Have Mount"
+            id="I already have a mount +$0"
+          />
+          <label for="I already have a mount +$0">I already have a mount</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="mount_type"
+            value="Fixed Mount"
+            id="Fixed Mount +$39"
+          />
+          <label for="Fixed Mount +$39">Fixed Mount</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="mount_type"
+            value="Tilting Mount"
+            id="Tilting Mount +$49"
+          />
+          <label for="Tilting Mount +$49">Tilting Mount</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="mount_type"
+            value="Full-Motion Mount"
+            id="Full-Motion Mount +$69"
+          />
+          <label for="Full-Motion Mount +$69">Full-Motion Mount</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-part">
+      <div class="form-part-heading">Select Your Wall Type</div>
+      <div class="options d-flex flex-column gap-3">
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="wall_type"
+            value="Dry Wall, Plaster, Wood"
+            id="Dry Wall, Plaster, Wood +$0"
+          />
+          <label for="Dry Wall, Plaster, Wood +$0"
+            >Dry Wall, Plaster, Wood
+          </label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input type="radio" name="wall_type" value="Brick" id="Brick +$49" />
+          <label for="Brick +$49">Brick</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="wall_type"
+            value="Concrete"
+            id="Concrete +$49"
+          />
+          <label for="Concrete +$49">Concrete</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-part">
+      <div class="form-part-heading">Would You Like to Hide Your Wires?</div>
+      <div class="options d-flex flex-column gap-3">
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="hide_wires"
+            value="Exposed"
+            id="Exposed +$0"
+          />
+          <label for="Exposed +$0">Exposed</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="hide_wires"
+            value="Eternal cord concealment"
+            id="Eternal cord concealment +$49"
+          />
+          <label for="Eternal cord concealment +$49"
+            >Eternal cord concealment</label
+          >
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="hide_wires"
+            value="In-wall cord concealment with power"
+            id="In-wall cord concealment with power +$99"
+          />
+          <label for="In-wall cord concealment with power +$99"
+            >In-wall cord concealment with power</label
+          >
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="radio"
+            name="hide_wires"
+            value="In-wall cord concealment with power above fireplace"
+            id="In-wall cord concealment with power above fireplace +$149"
+          />
+          <label for="In-wall cord concealment with power above fireplace +$149"
+            >In-wall cord concealment with power above fireplace</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="form-part">
+      <div class="form-part-heading">Add-ons</div>
+      <div class="options d-flex flex-column gap-3">
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="checkbox"
+            name="add_ons"
+            value="Soundbar"
+            id="Soundbar +$79"
+          />
+          <label for="Soundbar +$79">Soundbar</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="checkbox"
+            name="add_ons"
+            value="Above Fireplace"
+            id="Above Fireplace"
+          />
+          <label for="Above Fireplace">Above Fireplace</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="checkbox"
+            name="add_ons"
+            value="Install wall shelf"
+            id="Install wall shelf +$49"
+          />
+          <label for="Install wall shelf +$49">Install wall shelf</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="checkbox"
+            name="add_ons"
+            value="Xbox, Playstation"
+            id="Xbox, Playstation +$24"
+          />
+          <label for="Xbox, Playstation +$24">Xbox, Playstation</label>
+        </div>
+        <div class="option d-flex flex-row gap-3">
+          <input
+            type="checkbox"
+            name="add_ons"
+            value="Dismount Existing TV"
+            id="Dismount Existing TV +$49"
+          />
+          <label for="Dismount Existing TV +$49">Dismount Existing TV</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-part">
+      <div class="form-part-heading">Enter Your Contact Details</div>
+      <div class="options d-flex flex-column gap-3">
+        <div
+          class="option d-flex align-items-start justify-content-start flex-column gap-3"
+        >
+          <label for="">Name</label>
+          <input
+            type="text"
+            style="background-color: rgba(255, 255, 255, 0.526); color: white"
+            class="form-control"
+            name="customer_name"
+          />
+        </div>
+        <div
+          class="option d-flex flex-column align-items-start justify-content-start gap-3"
+        >
+          <label for="">Phone *</label>
+          <input
+            required
+            type="text"
+            style="background-color: rgba(255, 255, 255, 0.526); color: white"
+            class="form-control"
+            name="phone_number"
+          />
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="get-quote-form-btns d-flex flex-row">
+    <button class="back-form-btn">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <button class="submit-btn">Submit</button>
+    <button class="next-form-btn">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+</div>
+
+<header>
+  <nav class="">
+    <div class="container">
+      <div
+        class="row d-flex align-items-center flex-row justify-content-between"
+      >
+        <div class="col d-flex align-items-center flex-row gap-2 logo-side">
+          <div class="logo">
+            <img
+              style="width: 10rem; object-fit: cover; height: 5rem"
+              class="logo"
+              src="{% static 'images/logo.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="timing-con fw-bold">8:00AM-10:00PM DAILY</div>
+        </div>
+        <div class="r-side justify-content-end d-flex flex-row gap-3 col">
+          <a
+            data-action="phone"
+            href="tel:+16696498787"
+            class="btn-1"
+            tabindex="-1"
+            bis_skin_checked="1"
+            >+16696498787</a
+          >
+          <a
+            data-action="phone"
+            href="#"
+            class="btn-1 quote-btn"
+            tabindex="-1"
+            bis_skin_checked="1"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div
+      class="row d-flex flex-column align-items-center justify-content-around"
+    >
+      <div class="col text-center">
+        <div class="primary-heading">TV Mounting Service</div>
+        <div class="text-center lg-text">
+          Want To Mount Your TV
+          <br />
+          Let Us Perfectly Do It For You!
+        </div>
+        <div class="fw-bold sm-text">
+          Get the best TV mounting service - for reasonable price
+        </div>
+        <div class="btn-container">
+          <button class="header-btn quote-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="text-size-hero-container mt-5 container">
+  <div class="row mb-5">
+    <h1 class="my-h1 text-center">What size is the TV?</h1>
+  </div>
+  <div
+    class="row flex-wrap tvs row-cols-2 gap-sm-3 gap-md-0 gap-lg-0 justify-content-between align-items-center"
+  >
+    <div
+      class="tv-card quote-btn align-items-center justify-content-around d-flex col-lg-6 col-md-6 col-12"
+    >
+      <img class="tv-1 tv-img" src="{% static 'images/tvIcon.png' %}" alt="" />
+      <div class="size-price-text">31" or smaller</div>
+    </div>
+    <div
+      class="tv-card quote-btn align-items-center justify-content-around d-flex col-lg-6 col-md-6 col-12"
+    >
+      <img class="tv-2 tv-img" src="{% static 'images/tvIcon.png' %}" alt="" />
+      <div class="size-price-text">32"-59"</div>
+    </div>
+    <div
+      class="tv-card quote-btn align-items-center justify-content-around d-flex col-lg-6 col-md-6 col-12"
+    >
+      <img class="tv-3 tv-img" src="{% static 'images/tvIcon.png' %}" alt="" />
+      <div class="size-price-text">60"or larger" (2 Techs)</div>
+    </div>
+    <div
+      class="tv-card quote-btn align-items-center justify-content-around d-flex col-lg-6 col-md-6 col-12"
+    >
+      <img class="tv-4 tv-img" src="{% static 'images/tvIcon.png' %}" alt="" />
+      <div class="size-price-text">60"or larger" (1 Techs)</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUALITIES CONTAINER STARTS  -->
+
+<div class="hero-2">
+  <div class="container">
+    <div class="row d-flex justify-content-center flex-row flex-wrap">
+      <div
+        class="col-lg-3 gap-3 col-md-4 justify-content-start align-items-center col-sm-8 col-10 d-flex flex-wrap flex-row"
+      >
+        <div class="icon">
+          <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+        <div class="ser-text">
+          <div class="ser-heading">CLEAR PRICING</div>
+          <div class="ser-desc">No Hidden Costs</div>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 gap-3 col-md-5 justify-content-start align-items-center col-sm-8 col-10 d-flex flex-row"
+      >
+        <div class="icon">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <div class="ser-text">
+          <div class="ser-heading text-nowrap">
+            QUALITY GUARANTEED
+          </div>
+          <div class="ser-desc">
+            Trusted Experience, Expertise <br />Protected by Insurance
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 gap-3 col-md-5 justify-content-start align-items-center col-sm-8 col-10 d-flex flex-row"
+      >
+        <div class="icon">
+          <i class="fa-regular fa-handshake"></i>
+        </div>
+        <div class="ser-text">
+          <div class="ser-heading">RED CARPET TREATMENT</div>
+          <div class="ser-desc">
+            Always Excel Expectations Client is Always Right Cleaning After the
+            Works
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES CONTAINER STARTS  -->
+
+<div class="hero-3 services-container">
+  <div class="container">
+    <div class="row">
+      <h1 class="my-h1 text-center mb-5">What Services We Provide</h1>
+    </div>
+    <div class="row services d-flex flex-row gap-4 justify-content-center">
+      <div
+        class="service-card quote-btn d-flex flex-column gap-2 text-center align-items-center"
+      >
+        <img src="{% static 'images/p14.png' %}" alt="" />
+        <div class="service-title">WIRE CONCEALMENT</div>
+        <div class="service-desc">Would you like to hide your wires?</div>
+      </div>
+      <div
+        class="service-card quote-btn d-flex flex-column gap-2 text-center align-items-center"
+      >
+        <img src="{% static 'images/p9.png' %}" alt="" />
+        <div class="service-title">FIREPLACE TV INSTALLATION</div>
+        <div class="service-desc">
+          We mount TVs anywhere, even above fireplaces
+        </div>
+      </div>
+      <div
+        class="service-card quote-btn d-flex flex-column gap-2 text-center align-items-center"
+      >
+        <img src="{% static 'images/p13.png' %}" alt="" />
+        <div class="service-title">SOUNDBAR</div>
+        <div class="service-desc">Installation on the wall under the TV</div>
+      </div>
+      <div
+        class="service-card quote-btn d-flex flex-column gap-2 text-center align-items-center"
+      >
+        <img src="{% static 'images/p25.png' %}" alt="" />
+        <div class="service-title">TV DISMOUNTING</div>
+        <div class="service-desc">Moving? We dismount and remount TVs</div>
+      </div>
+      <div
+        class="service-card quote-btn d-flex flex-column gap-2 text-center align-items-center"
+      >
+        <img src="{% static 'images/p24.png' %}" alt="" />
+        <div class="service-title">HOME THEATER</div>
+        <div class="service-desc">Installation and connection</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEOS CONTAINER STARTS HERE  -->
+
+<div class="videos-container hero-4">
+  <div style="position: relative" class="container-fluid">
+    <div class="row">
+      <h1 class="text-center my-h1">Videos of completed works</h1>
+    </div>
+    <div class="row d-flex videos mt-5 flex-row gap-4">
+      <div class="video complete-work-video">
+        <video controls src="{% static 'videos/test.mp4' %}"></video>
+        <div class="play-btn">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+      <div class="video complete-work-video">
+        <video controls src="{% static 'videos/test.mp4' %}"></video>
+        <div class="play-btn">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+      <div class="video complete-work-video">
+        <video controls src="{% static 'videos/test.mp4' %}"></video>
+        <div class="play-btn">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+      <div class="video complete-work-video">
+        <video controls src="{% static 'videos/test.mp4' %}"></video>
+        <div class="play-btn">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+      <div class="video complete-work-video">
+        <video controls src="{% static 'videos/test.mp4' %}"></video>
+        <div class="play-btn">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CUSTOMER REVIEWS CONTAINER STARTS  -->
+
+<div class="customer-reviews hero-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <h1 class="my-h1 mb-5 text-center">What Our Customers Say</h1>
+    </div>
+    <div class="row">
+      <div class="reviews-carousel">
+        <div class="prev-btn d-btn">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="review">
+          <div class="profile-section">
+            <img
+              class="profile-img"
+              src="{% static 'images/header.png' %}"
+              alt=""
+            />
+            <div class="d-flex flex-column">
+              <div class="name">Martina Messa</div>
+              <div class="time-ago">17 days ago</div>
+            </div>
+          </div>
+          <div class="ranking">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="review-text">
+            They are the best. One of the best installers in the town. 100%
+            recommend to anyone who is looking for their service.
+          </div>
+        </div>
+        <div class="review">
+          <div class="profile-section">
+            <img
+              class="profile-img"
+              src="{% static 'images/header.png' %}"
+              alt=""
+            />
+            <div class="d-flex flex-column">
+              <div class="name">Adre Abyrnathis</div>
+              <div class="time-ago">17 days ago</div>
+            </div>
+          </div>
+          <div class="ranking">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="review-text">
+            They are the best. One of the best installers in the town.
+          </div>
+        </div>
+        <div class="review">
+          <div class="profile-section">
+            <img
+              class="profile-img"
+              src="{% static 'images/header.png' %}"
+              alt=""
+            />
+            <div class="d-flex flex-column">
+              <div class="name">Monique Rosario</div>
+              <div class="time-ago">17 days ago</div>
+            </div>
+          </div>
+          <div class="ranking">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="review-text">
+            100% recommend to anyone who is looking for their service.
+          </div>
+        </div>
+        <div class="next-btn d-btn">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="our-work-container hero-6">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="my-h1">Our Work</h1>
+      <h3 style="color: var(--primary-color)">
+        Here are some examples of our work
+      </h3>
+    </div>
+    <div
+      class="row d-flex mt-5 flex-row align-items-center justify-content-center"
+    >
+      <div class="col-lg-8 d-flex flex-row gap-4 justify-content-center">
+        <button class="btn-3 hide-wires-images-btn">Hide Wires</button>
+        <button class="btn-3 fireplace-images-btn">Fireplace</button>
+        <button class="btn-3 soundbar-images-btn">Soundbar</button>
+      </div>
+    </div>
+    <div
+      class="row mt-5 justify-content-center align-items-center work-images hide-wires-images flex-row flex-wrap gap-5 row-cols-4"
+    >
+      <div class="col past-work-img">
+        <img src="{% static 'images/p1.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p2.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p3.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p4.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p5.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p6.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p7.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p8.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p9.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p10.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p11.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p12.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p13.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p14.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p15.png' %}" alt="work image" />
+      </div>
+    </div>
+    <div
+      class="row mt-5 justify-content-center align-items-center work-images fireplace-tv-images flex-row flex-wrap gap-5 row-cols-4"
+    >
+      <div class="col past-work-img">
+        <img src="{% static 'images/p16.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p17.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p18.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p19.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p20.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p21.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p22.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p24.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p25.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p26.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p27.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p28.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p29.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p31.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p30.png' %}" alt="work image" />
+      </div>
+    </div>
+    <div
+      class="row mt-5 justify-content-center align-items-center work-images soundbar-images flex-row flex-wrap gap-5 row-cols-4"
+    >
+      <div class="col past-work-img">
+        <img src="{% static 'images/p32.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p33.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p34.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p35.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p36.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p37.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p38.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p39.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p40.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p41.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p42.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p43.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p44.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p22.png' %}" alt="work image" />
+      </div>
+      <div class="col past-work-img">
+        <img src="{% static 'images/p24.png' %}" alt="work image" />
+      </div>
+    </div>
+    <div class="row mt-5 d-flex flex-row justify-content-center">
+      <div class="col d-flex flex-row justify-content-center">
+        <button class="header-btn quote-btn">Get a quote</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="types-of-tv-mounts-container hero-7">
+  <div class="container">
+    <div class="row">
+      <h1 class="my-h1 text-center">Types of TV Mounts</h1>
+    </div>
+    <div
+      class="row d-flex mt-5 flex-row align-items-center justify-content-center"
+    >
+      <div class="col-lg-8 d-flex flex-row gap-4 justify-content-center">
+        <button class="btn-3 tv-mount-btn">Full-motion</button>
+        <button class="btn-3 tv-mount-btn">Tilting</button>
+        <button class="btn-3 tv-mount-btn">Fixed</button>
+      </div>
+      <div class="row gap-5 mt-5 flex-wrap flex-row tv-mounts">
+        <div class="mount">
+          <img src="{% static 'images/p29.png' %}" alt="" />
+        </div>
+        <div class="mount">
+          <img src="{% static 'images/p13.png' %}" alt="" />
+        </div>
+        <div class="mount">
+          <img src="{% static 'images/p19.png' %}" alt="" />
+        </div>
+      </div>
+      <div class="row gap-5 mt-5 flex-wrap flex-row tv-mounts">
+        <div class="mount">
+          <img src="{% static 'images/p36.png' %}" alt="" />
+        </div>
+        <div class="mount">
+          <img src="{% static 'images/p24.png' %}" alt="" />
+        </div>
+        <div class="mount">
+          <img src="{% static 'images/p12.png' %}" alt="" />
+        </div>
+      </div>
+      <div class="row gap-5 mt-5 flex-wrap flex-row tv-mounts">
+        <div class="mount">
+          <img src="{% static 'images/p14.png' %}" alt="" />
+        </div>
+        <div class="mount">
+          <img src="{% static 'images/p10.png' %}" alt="" />
+        </div>
+        <div class="mount">
+          <img src="{% static 'images/p31.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-8 why-us-container">
+    <div class="container">
+      <div class="row">
+        <h1 class="my-h1 mb-5 text-center">Why Choose Us</h1>
+      </div>
+      <div
+        class="row why-us-cards d-flex gap-4 justif-content-center flex-wrap"
+      >
+        <div class="d-flex flex-row gap-4 why-us-card mb-5">
+          <img src="{% static 'images/worker.svg' %}" alt="" />
+          <div class="text-side d-flex flex-column gap-4">
+            <div class="why-us-title">Our TV Mounting Experience</div>
+            <div class="why-us-text">
+              At Kraus TV Mounting, we take pride in offering TV mounting
+              solutions that stand out in terms of quality and convenience. With
+              5 years of experience and over 10,000 successful TV mountings
+              completed,our expertise is backed by a strong track record. We
+              understand the importance of a hassle-free experience, and that's
+              why we offer Same-Day Service options to accommodate your
+              schedule.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row gap-4 why-us-card mb-5">
+          <img src="{% static 'images/dollar_sign_svg.svg' %}" alt="" />
+          <div class="text-side d-flex flex-column gap-4">
+            <div class="why-us-title">Clear and Fair Prices</div>
+            <div class="why-us-text">
+              Our commitment to excellence is reflected in our Clear Rates &
+              Service Catalog. We offer competitive pricing, starting from just
+              $69.00 for TV wall mounting, $49.00 for tilting mounts, and $49.00
+              for above-the-fireplace installations. There are no hidden costs;
+              what you see is what you get. We believe in transparent pricing,
+              ensuring you know exactly what to expect.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row gap-4 why-us-card mb-5">
+          <img src="{% static 'images/professional.svg' %}" alt="" />
+          <div class="text-side d-flex flex-column gap-4">
+            <div class="why-us-title">Skilled TV Installation Team</div>
+            <div class="why-us-text">
+              When you choose Kraus TV Mounting, you opt for Pro-Level TV
+              Installation and Pro TV Mounting. Our technicians are highly
+              skilled, delivering precise mounting service that's endorsed by
+              reviews. We take pride in our Exceptional 5-Star Service, as
+              demonstrated by the positive feedback from our satisfied
+              customers.We're not just about mounting TVs; we're about providing
+              outstanding assistance that exceeds your expectations.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row gap-4 why-us-card mb-5">
+          <img src="{% static 'images/service.svg' %}" alt="" />
+          <div class="text-side d-flex flex-column gap-4">
+            <div class="why-us-title">Exceptional Service Quality</div>
+            <div class="why-us-text">
+              With our 1-Hour On-site service, you can have your TV securely
+              mounted in no time. We prioritize your convenience, valuing your
+              time as much as you do. Moreover, our service comes with a 1-Year
+              Guarantee, ensuring your peace of mind. We stand behind the
+              quality of our work, and if any issues arise within that period,
+              we'll address them promptly.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row gap-4 why-us-card mb-5">
+          <img src="{% static 'images/quick.svg' %}" alt="" />
+          <div class="text-side d-flex flex-column gap-4">
+            <div class="why-us-title">Quick and Convenient Service</div>
+            <div class="why-us-text">
+              When you book our Expert TV mounting, you're choosing a service
+              that's trusted and review-proven. We've built a reputation for
+              Reliable TV Service that prioritizes customer happiness. Our Clear
+              Pricing policy ensures you won't encounter any surprises, and
+              you'll always know what to expect from our TV Excellence &
+              Service.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row gap-4 why-us-card mb-5">
+          <img src="{% static 'images/customers_first.svg' %}" alt="" />
+          <div class="text-side d-flex flex-column gap-4">
+            <div class="why-us-title">Putting Customers First</div>
+            <div class="why-us-text">
+              At Kraus TV Mounting, we believe the customer is always right. Our
+              Red Carpet Treatment ensures you receive VIP-level service, and we
+              consistently aim to exceed your expectations. With over 5 years of
+              experience and a track record of 10,000+ successful installs, you
+              can trust our insured TV Wall Mounting Service. Experience
+              excellence with our TV Mounting Service - Book Now for Expert TV
+              Installation, a service that's proven by reviews. Your
+              satisfaction is our priority, and that's why we offer Outstanding
+              5-Star Assistance.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex flex-row mb-4 justify-content-center">
+          <button class="header-btn quote-btn">Get a quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-9 care-about-container mt-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-center gap-5">
+        <div
+          class="col-lg-8 col-12 col-md-9 d-flex flex-column gap-4 col-sm-10"
+        >
+          <h4 class="fw-bold">What we care about</h4>
+          <div class="about-text">
+            At Kraus TV Mounting, we're your go-to TV mounting experts,
+            providing Secure TV Installation and Quality TV Service for your
+            peace of mind.
+          </div>
+          <div class="about-text">
+            When you choose us, you're opting for professionals who understand
+            the importance of proper TV mounting, offering Same-Day Service for
+            your convenience and making Pro TV Mounting hassle-free. We
+            prioritize your home's safety and protect your audio and visual
+            equipment from potential damage. We keep things neat and tidy, so
+            your space looks better than before.
+          </div>
+          <div class="about-text">
+            Safety is essential when securing your TV, especially if you have
+            kids or guests. We fasten your flat screen securely, so accidents
+            are prevented. Your investment deserves protection, and wall
+            mounting ensures it's part of your home. Your pets' safety is our
+            concern too!
+          </div>
+          <div class="about-text">
+            TV mounting can be stressful, but we take care of everything. Our
+            experts handle the whole process, from attaching brackets to
+            mounting on the wall. We find the right solutions, whether you need
+            a swivel, tilt, or custom mount.
+          </div>
+          <div class="about-text">
+            Your well-being is our top concern. Our skilled technicians ensure
+            your bracket is strong and safe. We also manage cables, keeping
+            things organized.
+          </div>
+          <div class="about-text">
+            We give you detailed information about our services, so you can
+            confidently choose us. With over ten years of experience, we can
+            mount TVs on various surfaces, including drywall, brick, stone,
+            tile, concrete, wood paneling, and exterior surfaces.
+          </div>
+          <div class="about-text">
+            We offer flexible mounting locations, including interior walls,
+            above the fireplace, hanging from the ceiling, and even in exterior
+            areas. We're experts at hiding wires, creating a clean look. We
+            handle drywall repairs, texture matching, and painting.
+          </div>
+          <div class="about-text">
+            We value your time. We provide prompt service, arriving with the
+            right tools. Plus, we offer exceptional 5-Star Service and
+            Outstanding 5-Star Assistance to ensure your satisfaction. Choose
+            Kraus TV Mounting for all your TV mounting needs
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-8 col-sm-12 col-12">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="col-lg-7 mt-5 col-md-10 col-12">
+        <h3 class="text-center mb-5">Questions About Our Services</h3>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseOne"
+                aria-expanded="true"
+                aria-controls="faqCollapseOne"
+              >
+                What is the installation process for a TV mount?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                The installation process typically involves finding the right
+                wall location, mounting the bracket securely, and then attaching
+                the TV to the bracket. Our professionals ensure a secure and
+                safe installation.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo"
+                aria-expanded="false"
+                aria-controls="faqCollapseTwo"
+              >
+                Do you provide the TV mounting hardware?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we provide all necessary mounting hardware including
+                brackets and screws. If you already have a specific mount you
+                want to use, we can also install it for you.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree"
+                aria-expanded="false"
+                aria-controls="faqCollapseThree"
+              >
+                How long does the TV mounting service take?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                The duration of the service depends on the complexity of the
+                installation. However, a typical TV mounting service takes about
+                1 to 2 hours.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFour"
+                aria-expanded="false"
+                aria-controls="faqCollapseFour"
+              >
+                Can you hide the cables for a clean look?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we offer cable management services to hide the cables
+                behind the wall for a clean and professional look. This may
+                involve additional work, but we ensure a neat finish.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFive"
+                aria-expanded="false"
+                aria-controls="faqCollapseFive"
+              >
+                Do you offer warranty on the TV mounting service?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we offer a warranty on our TV mounting service to ensure
+                that you are completely satisfied with the installation. Please
+                contact us for more details about the warranty period and
+                coverage.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseSix"
+                aria-expanded="false"
+                aria-controls="faqCollapseSix"
+              >
+                Can you install a soundbar with the TV mount?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we can install a soundbar along with your TV mount. We
+                ensure that both the TV and soundbar are securely mounted and
+                cables are neatly managed.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseSeven"
+                aria-expanded="false"
+                aria-controls="faqCollapseSeven"
+              >
+                What types of walls can you mount a TV on?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSeven"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We can mount TVs on various types of walls including drywall,
+                brick, and concrete. Our team is experienced in handling
+                different wall materials to ensure a secure and stable
+                installation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // PLAYING VIDEOS ON CLICK
+
+    const completedWorkVideos = document.querySelectorAll(
+      ".complete-work-video"
+    );
+
+    completedWorkVideos.forEach((video) => {
+      video.addEventListener("click", (e) => {
+        e.preventDefault();
+        video.querySelector(".play-btn").style.display = "none";
+        video.querySelector("video").play();
+      });
+    });
+
+    ////////////////////////////////////////////////////////////////////
+
+    // REVIEWS CAROUSEL
+
+    const numberOfReviews = 2;
+
+    const carousel = document.querySelector(".reviews-carousel");
+    const carouselItems = document.querySelectorAll(".review");
+    const nextReviewBtn = document.querySelector(".next-btn");
+    const prevReviewBtn = document.querySelector(".prev-btn");
+    let carouselShowingItemNumber = 0;
+
+    function upateCarouselStatus() {
+      carouselItems.forEach((item) => {
+        item.style.opacity = "0";
+      });
+      carouselItems[carouselShowingItemNumber].style.transition = ".3s";
+      carouselItems[carouselShowingItemNumber].style.opacity = "1";
+    }
+
+    nextReviewBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (carouselShowingItemNumber < numberOfReviews) {
+        carouselShowingItemNumber += 1;
+      } else if (carouselShowingItemNumber == numberOfReviews) {
+        carouselShowingItemNumber = 0;
+      }
+      upateCarouselStatus();
+    });
+    prevReviewBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (carouselShowingItemNumber > 0) {
+        carouselShowingItemNumber -= 1;
+      } else if (carouselShowingItemNumber == 0) {
+        carouselShowingItemNumber = numberOfReviews;
+      }
+      upateCarouselStatus();
+    });
+    upateCarouselStatus();
+
+    // SHOWING WORK IMAGES CATEGORICALLY
+
+    const soundbarWorkImagesContainer =
+      document.querySelector(".soundbar-images");
+    const fireplaceTvWorkImagesContainer = document.querySelector(
+      ".fireplace-tv-images"
+    );
+    const hideWiresWorkImagesContainer =
+      document.querySelector(".hide-wires-images");
+
+    const hidewiresImagesBtn = document.querySelector(".hide-wires-images-btn");
+    const soundImagesBtn = document.querySelector(".soundbar-images-btn");
+    const fireplaceImagesBtn = document.querySelector(".fireplace-images-btn");
+
+    soundbarWorkImagesContainer.style.display = "none";
+    fireplaceTvWorkImagesContainer.style.display = "none";
+
+    hidewiresImagesBtn.addEventListener("click", (e) => {
+      e.target.style.backgroundColor = "#FF4500";
+      fireplaceImagesBtn.style.background = "none";
+      soundImagesBtn.style.background = "none";
+      hideWiresWorkImagesContainer.style.display = "flex";
+      soundbarWorkImagesContainer.style.display = "none";
+      fireplaceTvWorkImagesContainer.style.display = "none";
+    });
+
+    fireplaceImagesBtn.addEventListener("click", (e) => {
+      e.target.style.backgroundColor = "#FF4500";
+      hidewiresImagesBtn.style.background = "none";
+      soundImagesBtn.style.background = "none";
+      hideWiresWorkImagesContainer.style.display = "none";
+      soundbarWorkImagesContainer.style.display = "none";
+      fireplaceTvWorkImagesContainer.style.display = "flex";
+    });
+
+    soundImagesBtn.addEventListener("click", (e) => {
+      e.target.style.backgroundColor = "#FF4500";
+      fireplaceImagesBtn.style.background = "none";
+      hidewiresImagesBtn.style.background = "none";
+      hideWiresWorkImagesContainer.style.display = "none";
+      soundbarWorkImagesContainer.style.display = "flex";
+      fireplaceTvWorkImagesContainer.style.display = "none";
+    });
+
+    // //////////////////////////////////////
+
+    // TYPES OF TV MOUNT CONTAINER HANDLING
+
+    const tvMountBtns = document.querySelectorAll(".tv-mount-btn");
+    const typesOfTVMountsContainers = document.querySelectorAll(".tv-mounts");
+    console.log(typesOfTVMountsContainers);
+    console.log(tvMountBtns);
+    tvMountBtns[0].addEventListener("click", (e) => {
+      typesOfTVMountsContainers[0].style.display = "flex";
+      typesOfTVMountsContainers[1].style.display = "none";
+      typesOfTVMountsContainers[2].style.display = "none";
+    });
+
+    tvMountBtns[1].addEventListener("click", (e) => {
+      typesOfTVMountsContainers[1].style.display = "flex";
+      typesOfTVMountsContainers[0].style.display = "none";
+      typesOfTVMountsContainers[2].style.display = "none";
+    });
+
+    tvMountBtns[2].addEventListener("click", (e) => {
+      typesOfTVMountsContainers[2].style.display = "flex";
+      typesOfTVMountsContainers[0].style.display = "none";
+      typesOfTVMountsContainers[1].style.display = "none";
+    });
+
+    typesOfTVMountsContainers[0].style.display = "flex";
+
+    /////////////////////////////////////////////////////////////
+
+    // SHOW OR DISPLAY GET A QUOTE FORM
+
+    const quoteBtns = document.querySelectorAll(".quote-btn");
+    const closeContactModalWrapperBtn = document.querySelector(
+      ".close-contact-form-btn"
+    );
+    const contactModalWrapper = document.querySelector(".contact-form-wrapper");
+
+    console.log(quoteBtns);
+    console.log(contactModalWrapper);
+    quoteBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        checkCurrentFormPart();
+        document.querySelector(".get-quote-form-wrapper").style.top = "0%";
+        document.querySelector(".get-quote-form-wrapper").style.transition =
+          "1s";
+      });
+    });
+
+    closeContactModalWrapperBtn.addEventListener("click", (e) => {
+      contactModalWrapper.style.display = "none";
+    });
+
+    // HANDLING GET QUOTE FORM
+
+    const nextFormBtn = document.querySelector(".next-form-btn");
+    const backFormBtn = document.querySelector(".back-form-btn");
+    const allFormParts = document.querySelectorAll(".form-part");
+    const getQuoteFormSubmitBtn = document.querySelector(".submit-btn");
+    const getQuoteForm = document.querySelector(".get-quote-form");
+    const closeGetQuoteFormBtn = document.querySelector(
+      ".close-get-quote-form-btn"
+    );
+
+    closeGetQuoteFormBtn.addEventListener("click", (e) => {
+      document.querySelector(".get-quote-form-wrapper").style.top = "-100%";
+      document.querySelector(".get-quote-form-wrapper").style.transition = "1s";
+    });
+    let currentFormPart = 0;
+
+    // Smooth scroll function
+    function smoothScrollTo(element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      checkCurrentFormPart();
+    }
+
+    function checkCurrentFormPart() {
+      if (currentFormPart == 0 ) {
+        backFormBtn.style.display = 'none';
+      } else {
+        backFormBtn.style.display = 'block';
+      }
+      if (currentFormPart == allFormParts.length - 1) {
+        nextFormBtn.style.display = 'none';
+      } else {
+        nextFormBtn.style.display = 'block';
+      }
+    }
+    nextFormBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (currentFormPart < allFormParts.length - 1) {
+        currentFormPart += 1;
+        smoothScrollTo(allFormParts[currentFormPart]);
+      }
+    });
+
+    backFormBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (currentFormPart > 0) {
+        currentFormPart -= 1;
+        smoothScrollTo(allFormParts[currentFormPart]);
+      }
+    });
+
+    const csrf = "{{csrf_token}}";
+    getQuoteFormSubmitBtn.addEventListener("click", async (e) => {
+      const tv_size = getQuoteForm.tv_size.value;
+      const mount_type = getQuoteForm.mount_type.value;
+      const wall_type = getQuoteForm.wall_type.value;
+      const wires = getQuoteForm.hide_wires.value;
+      const add_ons_checks = getQuoteForm.add_ons.value;
+      const contact = getQuoteForm.phone_number.value;
+      const name = getQuoteForm.customer_name.value;
+      const checkboxes = document.querySelectorAll(
+        'input[name="add_ons"]:checked'
+      );
+      console.log(checkboxes);
+      var add_ons = [];
+
+      for (let checkbox of checkboxes) {
+        add_ons.push(checkbox.value);
+      }
+      console.log(add_ons);
+
+      e.preventDefault();
+
+      const response = await fetch(`{% url 'send-email' %}`, {
+        method: "POST",
+        headers: {
+          "X-CSRFToken": csrf,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          tv_size,
+          mount_type,
+          wall_type,
+          wires,
+          add_ons,
+          contact,
+          name,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.status === 200) {
+        if (data.message == "success") {
+          document.querySelector(".get-quote-form-wrapper").style.top = "-100%";
+          document.querySelector(".get-quote-form-wrapper").style.transition =
+            "1s";
+          alert("Thanks for reaching out. We will get in touch ASAP!");
+        }
+      }
+    });
+
+    ///////////////////////////////////////////////////////////
+
+    // HANDLING IMAGES
+
+    const allImages = document.getElementsByTagName("img");
+    const closeImageViewerBtn = document.querySelector(
+      ".close-image-viewer-btn"
+    );
+    const imageViewerWrapper = document.querySelector(".image-viewer-wrapper");
+
+    Array.from(allImages).forEach((image) => {
+      image.addEventListener("click", (e) => {
+        if (
+          image.classList.contains("logo") ||
+          image.classList.contains("tv-img")
+        ) {
+        } else {
+          imageViewerWrapper.style.display = "flex";
+          const imageViewer = imageViewerWrapper.getElementsByTagName("img")[0];
+          imageViewer.src = e.target.src;
+        }
+      });
+    });
+
+    closeImageViewerBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      imageViewerWrapper.style.display = "none";
+    });
+  </script>
+
+  {% endblock %}
+</div>

@@ -1,0 +1,65 @@
+{% load static %}
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 sm-12 col-12 d-flex flex-column gap-3 justify-content-start align-items-start">
+                <a href="" class="white-btn">
+                    +16696498787
+                </a>
+                <a href="" class="white-btn">
+                    temerlansmtp@gmail.com
+                </a>
+                <div class="white-text">
+                    1 Hour On Your Site -- We'll fix all things
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 sm-12 col-12 d-flex flex-column gap-3 justify-content-start align-items-start">
+                <div class="white-text-2">
+                    Type Your Phone Number Below
+                </div>
+                <div class="sm-text">
+                    We'll promptly reach out to assist you with your TV mounting needs
+                </div>
+                <form class="input footer-form justify-content-end align-items-end d-flex flex-row gap-2">
+                    <div class="footer-input d-flex flex-column">
+                        <label style="color:white;" class="fw-bold">Phone Number</label>
+                        <input type="text" required name="phone" class="footer-input-field" id="">
+                    </div>
+                    <button class="footer-submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+
+    const footerForm = document.querySelector('.footer-form');
+
+    footerForm.addEventListener("submit", async e => {
+        e.preventDefault();
+        const response = await fetch(`{% url 'send-contact-email' %}`, {
+        method: "POST",
+        headers: {
+          "X-CSRFToken": csrf,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            phone: e.target.phone.value
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.status === 200) {
+        if (data.message == "success") {
+          alert("Thanks for reaching out. We will get in touch ASAP!");
+        }
+      }
+    });
+</script>
